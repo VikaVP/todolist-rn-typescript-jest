@@ -1,0 +1,8 @@
+b5d6a5b89d75bea546516fbcc2449e28
+'use strict';
+
+if (process.env.NODE_ENV === "production") {
+  module.exports = require("./stylis.cjs.prod.js");
+} else {
+  module.exports = require("./stylis.cjs.dev.js");
+}

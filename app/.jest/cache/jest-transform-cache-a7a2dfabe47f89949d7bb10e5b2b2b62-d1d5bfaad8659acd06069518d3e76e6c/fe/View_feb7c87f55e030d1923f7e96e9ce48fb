@@ -1,0 +1,40 @@
+56939122baa16271534044056bcfcead
+"use strict";
+
+
+
+
+
+
+
+
+
+
+
+var _ViewNativeComponent = _interopRequireDefault(require("./ViewNativeComponent"));
+var _TextAncestor = _interopRequireDefault(require("../../Text/TextAncestor"));
+var React = _interopRequireWildcard(require("react"));var _this = this,_jsxFileName = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/node_modules/react-native/Libraries/Components/View/View.js";function _getRequireWildcardCache(nodeInterop) {if (typeof WeakMap !== "function") return null;var cacheBabelInterop = new WeakMap();var cacheNodeInterop = new WeakMap();return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {return nodeInterop ? cacheNodeInterop : cacheBabelInterop;})(nodeInterop);}function _interopRequireWildcard(obj, nodeInterop) {if (!nodeInterop && obj && obj.__esModule) {return obj;}if (obj === null || typeof obj !== "object" && typeof obj !== "function") {return { default: obj };}var cache = _getRequireWildcardCache(nodeInterop);if (cache && cache.has(obj)) {return cache.get(obj);}var newObj = {};var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;for (var key in obj) {if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;if (desc && (desc.get || desc.set)) {Object.defineProperty(newObj, key, desc);} else {newObj[key] = obj[key];}}}newObj.default = obj;if (cache) {cache.set(obj, newObj);}return newObj;}function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _extends() {_extends = Object.assign || function (target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i];for (var key in source) {if (Object.prototype.hasOwnProperty.call(source, key)) {target[key] = source[key];}}}return target;};return _extends.apply(this, arguments);}
+
+
+
+
+
+
+
+
+
+
+var View =
+
+
+React.forwardRef(function (props, forwardedRef) {
+  return (
+    React.createElement(_TextAncestor.default.Provider, { value: false, __self: _this, __source: { fileName: _jsxFileName, lineNumber: 31, columnNumber: 5 } },
+    React.createElement(_ViewNativeComponent.default, _extends({}, props, { ref: forwardedRef, __self: _this, __source: { fileName: _jsxFileName, lineNumber: 32, columnNumber: 7 } }))));
+
+
+});
+
+View.displayName = 'View';
+
+module.exports = View;

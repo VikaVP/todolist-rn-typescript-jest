@@ -1,0 +1,372 @@
+51c8b219acf27088d894336eb6056a03
+
+
+
+
+
+
+
+
+
+
+'use strict';function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);enumerableOnly && (symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;})), keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = null != arguments[i] ? arguments[i] : {};i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {_defineProperty(target, key, source[key]);}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var hairlineWidth = require('../Utilities/PixelRatio').roundToNearestPixel(0.4);
+if (hairlineWidth === 0) {
+  hairlineWidth = 1 / require('../Utilities/PixelRatio').get();
+}
+
+var absoluteFill = {
+  position: 'absolute',
+  left: 0,
+  right: 0,
+  top: 0,
+  bottom: 0 };
+
+if (__DEV__) {
+  Object.freeze(absoluteFill);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  hairlineWidth: hairlineWidth,
+
+
+
+
+
+
+  absoluteFill: absoluteFill,
+
+
+
+
+
+
+
+
+
+
+
+
+
+  absoluteFillObject: absoluteFill,
+
+
+
+
+
+
+
+  compose: function compose(
+  style1,
+  style2)
+  {
+    if (style1 != null && style2 != null) {
+      return [style1, style2];
+    } else {
+      return style1 != null ? style1 : style2;
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  flatten: require('./flattenStyle'),
+
+
+
+
+
+
+
+
+
+
+  setStyleAttributePreprocessor: function setStyleAttributePreprocessor(
+  property,
+  process)
+  {
+    var value;
+
+    if (require('../Components/View/ReactNativeStyleAttributes')[property] === true) {
+      value = { process: process };
+    } else if (typeof require('../Components/View/ReactNativeStyleAttributes')[property] === 'object') {
+      value = _objectSpread(_objectSpread({}, require('../Components/View/ReactNativeStyleAttributes')[property]), {}, { process: process });
+    } else {
+      console.error(property + " is not a valid style attribute");
+      return;
+    }
+
+    if (__DEV__ && typeof value.process === 'function') {
+      console.warn("Overwriting " + property + " style attribute preprocessor");
+    }
+
+    require('../Components/View/ReactNativeStyleAttributes')[property] = value;
+  },
+
+
+
+
+  create: function create(obj) {
+
+
+
+    if (__DEV__) {
+      for (var _key in obj) {
+        if (obj[_key]) {
+          Object.freeze(obj[_key]);
+        }
+      }
+    }
+    return obj;
+  } };

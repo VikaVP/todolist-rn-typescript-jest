@@ -1,0 +1,117 @@
+3dc8e2866405b9e4d7e246d4b434db85
+"use strict";
+
+
+
+
+
+
+
+
+
+var _ReactNativeViewViewConfig = _interopRequireDefault(require("../../Components/View/ReactNativeViewViewConfig"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);enumerableOnly && (symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;})), keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = null != arguments[i] ? arguments[i] : {};i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {_defineProperty(target, key, source[key]);}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+
+
+var AndroidTextInputViewConfig = {
+  uiViewClassName: 'AndroidTextInput',
+  bubblingEventTypes: {
+    topBlur: {
+      phasedRegistrationNames: {
+        bubbled: 'onBlur',
+        captured: 'onBlurCapture' } },
+
+
+    topEndEditing: {
+      phasedRegistrationNames: {
+        bubbled: 'onEndEditing',
+        captured: 'onEndEditingCapture' } },
+
+
+    topFocus: {
+      phasedRegistrationNames: {
+        bubbled: 'onFocus',
+        captured: 'onFocusCapture' } },
+
+
+    topKeyPress: {
+      phasedRegistrationNames: {
+        bubbled: 'onKeyPress',
+        captured: 'onKeyPressCapture' } },
+
+
+    topSubmitEditing: {
+      phasedRegistrationNames: {
+        bubbled: 'onSubmitEditing',
+        captured: 'onSubmitEditingCapture' } },
+
+
+    topTextInput: {
+      phasedRegistrationNames: {
+        bubbled: 'onTextInput',
+        captured: 'onTextInputCapture' } } },
+
+
+
+  directEventTypes: {},
+  validAttributes: _objectSpread(_objectSpread({},
+  _ReactNativeViewViewConfig.default.validAttributes), {}, {
+
+    maxFontSizeMultiplier: true,
+    adjustsFontSizeToFit: true,
+    minimumFontScale: true,
+    autoFocus: true,
+    placeholder: true,
+    inlineImagePadding: true,
+    contextMenuHidden: true,
+    textShadowColor: { process: require('../../StyleSheet/processColor') },
+    maxLength: true,
+    selectTextOnFocus: true,
+    textShadowRadius: true,
+    underlineColorAndroid: { process: require('../../StyleSheet/processColor') },
+    textDecorationLine: true,
+    blurOnSubmit: true,
+    textAlignVertical: true,
+    fontStyle: true,
+    textShadowOffset: true,
+    selectionColor: { process: require('../../StyleSheet/processColor') },
+    selection: true,
+    placeholderTextColor: { process: require('../../StyleSheet/processColor') },
+    importantForAutofill: true,
+    lineHeight: true,
+    textTransform: true,
+    returnKeyType: true,
+    keyboardType: true,
+    multiline: true,
+    color: { process: require('../../StyleSheet/processColor') },
+    autoCompleteType: true,
+    autoComplete: true,
+    numberOfLines: true,
+    letterSpacing: true,
+    returnKeyLabel: true,
+    fontSize: true,
+    onKeyPress: true,
+    cursorColor: { process: require('../../StyleSheet/processColor') },
+    text: true,
+    showSoftInputOnFocus: true,
+    textAlign: true,
+    autoCapitalize: true,
+    autoCorrect: true,
+    caretHidden: true,
+    secureTextEntry: true,
+    textBreakStrategy: true,
+    onScroll: true,
+    onContentSizeChange: true,
+    disableFullscreenUI: true,
+    includeFontPadding: true,
+    fontWeight: true,
+    fontFamily: true,
+    allowFontScaling: true,
+    onSelectionChange: true,
+    mostRecentEventCount: true,
+    inlineImageLeft: true,
+    editable: true,
+    fontVariant: true }) };
+
+
+
+module.exports = AndroidTextInputViewConfig;

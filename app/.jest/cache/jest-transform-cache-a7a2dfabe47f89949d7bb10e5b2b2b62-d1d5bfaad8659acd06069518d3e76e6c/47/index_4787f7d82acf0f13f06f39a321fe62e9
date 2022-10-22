@@ -1,0 +1,29 @@
+b4375badcd7ced177b3b95a2506eddec
+
+
+
+
+function ValueParser(value) {
+  if (this instanceof ValueParser) {
+    this.nodes = require("./parse")(value);
+    return this;
+  }
+  return new ValueParser(value);
+}
+
+ValueParser.prototype.toString = function () {
+  return Array.isArray(this.nodes) ? require("./stringify")(this.nodes) : "";
+};
+
+ValueParser.prototype.walk = function (cb, bubble) {
+  require("./walk")(this.nodes, cb, bubble);
+  return this;
+};
+
+ValueParser.unit = require("./unit");
+
+ValueParser.walk = require("./walk");
+
+ValueParser.stringify = require("./stringify");
+
+module.exports = ValueParser;

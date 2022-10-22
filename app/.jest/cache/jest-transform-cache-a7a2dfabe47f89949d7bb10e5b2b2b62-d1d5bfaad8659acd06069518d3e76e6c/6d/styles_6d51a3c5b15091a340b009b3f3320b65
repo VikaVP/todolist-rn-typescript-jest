@@ -1,0 +1,211 @@
+4aab5301cced328d27afd9c220decdb4
+/* istanbul ignore next */
+function cov_1t9l87bf29() {
+  var path = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/styles.ts";
+  var hash = "c44d04f1576d5614096ce7994674d598c62ed2cd";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/styles.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 29
+        },
+        end: {
+          line: 1,
+          column: 84
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 33
+        }
+      },
+      "3": {
+        start: {
+          line: 8,
+          column: 35
+        },
+        end: {
+          line: 8,
+          column: 119
+        }
+      },
+      "4": {
+        start: {
+          line: 10,
+          column: 14
+        },
+        end: {
+          line: 10,
+          column: 73
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 13
+        },
+        end: {
+          line: 12,
+          column: 66
+        }
+      },
+      "6": {
+        start: {
+          line: 16,
+          column: 22
+        },
+        end: {
+          line: 16,
+          column: 332
+        }
+      },
+      "7": {
+        start: {
+          line: 18,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 42
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 16,
+            column: 55
+          },
+          end: {
+            line: 16,
+            column: 300
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 16,
+            column: 55
+          },
+          end: {
+            line: 16,
+            column: 70
+          }
+        }, {
+          start: {
+            line: 16,
+            column: 75
+          },
+          end: {
+            line: 16,
+            column: 299
+          }
+        }],
+        line: 16
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {},
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      file: undefined,
+      mappings: ";;;;;;;;;AAAA;;AACA;;;;AAEO,IAAMA,eAAe,GAAGC,gBAAOC,gBAAV,wPAONC,eAAMC,MAAN,CAAaC,OAPP,CAArB",
+      names: ["ButtonContainer", "styled", "TouchableOpacity", "theme", "colors", "primary"],
+      sourceRoot: undefined,
+      sources: ["/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/styles.ts"],
+      sourcesContent: ["import styled from \"styled-components/native\";\nimport theme from \"../../global/theme\";\n\nexport const ButtonContainer = styled.TouchableOpacity`\n  border-radius: 25px;\n  margin-left: 5px;\n  width: 50px;\n  height: 50px;\n  justify-content: center;\n  align-items: center;\n  background-color: ${theme.colors.primary};\n`;\n"]
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "c44d04f1576d5614096ce7994674d598c62ed2cd"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1t9l87bf29 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1t9l87bf29();
+
+var _interopRequireDefault =
+/* istanbul ignore next */
+(cov_1t9l87bf29().s[0]++, require("@babel/runtime/helpers/interopRequireDefault"));
+
+/* istanbul ignore next */
+cov_1t9l87bf29().s[1]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1t9l87bf29().s[2]++;
+exports.ButtonContainer = void 0;
+
+var _taggedTemplateLiteralLoose2 =
+/* istanbul ignore next */
+(cov_1t9l87bf29().s[3]++, _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteralLoose")));
+
+var _native =
+/* istanbul ignore next */
+(cov_1t9l87bf29().s[4]++, _interopRequireDefault(require("styled-components/native")));
+
+var _theme =
+/* istanbul ignore next */
+(cov_1t9l87bf29().s[5]++, _interopRequireDefault(require("../../global/theme")));
+
+var _templateObject;
+
+var ButtonContainer =
+/* istanbul ignore next */
+(cov_1t9l87bf29().s[6]++, _native.default.TouchableOpacity(
+/* istanbul ignore next */
+(cov_1t9l87bf29().b[0][0]++, _templateObject) ||
+/* istanbul ignore next */
+(cov_1t9l87bf29().b[0][1]++, _templateObject = (0, _taggedTemplateLiteralLoose2.default)(["\n  border-radius: 25px;\n  margin-left: 5px;\n  width: 50px;\n  height: 50px;\n  justify-content: center;\n  align-items: center;\n  background-color: ", ";\n"])), _theme.default.colors.primary));
+
+/* istanbul ignore next */
+cov_1t9l87bf29().s[7]++;
+exports.ButtonContainer = ButtonContainer;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUdhQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUhiO0FBQUE7QUFBQTs7QUFDQTtBQUFBO0FBQUE7Ozs7QUFFTyxJQUFNQSxlQUFlO0FBQUE7QUFBQSwwQkFBR0MsZ0JBQU9DLGdCQUFQRDtBQUFIO0FBQUE7QUFBQTtBQUFBLDhQQUFHQSxFQU9URSxlQUFNQyxNQUFORCxDQUFhRSxPQVBKSixDQUFILENBQXJCIiwibmFtZXMiOlsiQnV0dG9uQ29udGFpbmVyIiwic3R5bGVkIiwiVG91Y2hhYmxlT3BhY2l0eSIsInRoZW1lIiwiY29sb3JzIiwicHJpbWFyeSJdLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYm8tdmlrYS9Eb2N1bWVudHMvUmVhY3QtTmF0aXZlLVRvLWRvLUxpc3QtbWFpbi9hcHAvc3JjL2NvbXBvbmVudHMvQWRkQnV0dG9uL3N0eWxlcy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVkIGZyb20gXCJzdHlsZWQtY29tcG9uZW50cy9uYXRpdmVcIjtcbmltcG9ydCB0aGVtZSBmcm9tIFwiLi4vLi4vZ2xvYmFsL3RoZW1lXCI7XG5cbmV4cG9ydCBjb25zdCBCdXR0b25Db250YWluZXIgPSBzdHlsZWQuVG91Y2hhYmxlT3BhY2l0eWBcbiAgYm9yZGVyLXJhZGl1czogMjVweDtcbiAgbWFyZ2luLWxlZnQ6IDVweDtcbiAgd2lkdGg6IDUwcHg7XG4gIGhlaWdodDogNTBweDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6ICR7dGhlbWUuY29sb3JzLnByaW1hcnl9O1xuYDtcbiJdfQ==

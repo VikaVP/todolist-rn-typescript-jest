@@ -1,0 +1,332 @@
+8a2037f0d5df55835a6ea6d0e1699143
+"use strict";
+
+
+
+
+
+
+
+
+
+var _AnimatedImplementation = _interopRequireDefault(require("../../Animated/AnimatedImplementation"));
+var _AnimatedAddition = _interopRequireDefault(require("../../Animated/nodes/AnimatedAddition"));
+var _AnimatedDiffClamp = _interopRequireDefault(require("../../Animated/nodes/AnimatedDiffClamp"));
+var _AnimatedNode = _interopRequireDefault(require("../../Animated/nodes/AnimatedNode"));
+
+var React = _interopRequireWildcard(require("react"));
+var _StyleSheet = _interopRequireDefault(require("../../StyleSheet/StyleSheet"));
+var _View = _interopRequireDefault(require("../View/View"));
+var _Platform = _interopRequireDefault(require("../../Utilities/Platform"));var _jsxFileName = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/node_modules/react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader.js";function _getRequireWildcardCache(nodeInterop) {if (typeof WeakMap !== "function") return null;var cacheBabelInterop = new WeakMap();var cacheNodeInterop = new WeakMap();return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {return nodeInterop ? cacheNodeInterop : cacheBabelInterop;})(nodeInterop);}function _interopRequireWildcard(obj, nodeInterop) {if (!nodeInterop && obj && obj.__esModule) {return obj;}if (obj === null || typeof obj !== "object" && typeof obj !== "function") {return { default: obj };}var cache = _getRequireWildcardCache(nodeInterop);if (cache && cache.has(obj)) {return cache.get(obj);}var newObj = {};var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;for (var key in obj) {if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;if (desc && (desc.get || desc.set)) {Object.defineProperty(newObj, key, desc);} else {newObj[key] = obj[key];}}}newObj.default = obj;if (cache) {cache.set(obj, newObj);}return newObj;}function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);Object.defineProperty(Constructor, "prototype", { writable: false });return Constructor;}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });Object.defineProperty(subClass, "prototype", { writable: false });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _createSuper(Derived) {var hasNativeReflectConstruct = _isNativeReflectConstruct();return function _createSuperInternal() {var Super = _getPrototypeOf(Derived),result;if (hasNativeReflectConstruct) {var NewTarget = _getPrototypeOf(this).constructor;result = Reflect.construct(Super, arguments, NewTarget);} else {result = Super.apply(this, arguments);}return _possibleConstructorReturn(this, result);};}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;} else if (call !== void 0) {throw new TypeError("Derived constructors may only return object or undefined");}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _isNativeReflectConstruct() {if (typeof Reflect === "undefined" || !Reflect.construct) return false;if (Reflect.construct.sham) return false;if (typeof Proxy === "function") return true;try {Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));return true;} catch (e) {return false;}}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}
+
+
+
+var AnimatedView = _AnimatedImplementation.default.createAnimatedComponent(_View.default);var
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ScrollViewStickyHeader = function (_React$Component) {_inherits(ScrollViewStickyHeader, _React$Component);var _super = _createSuper(ScrollViewStickyHeader);function ScrollViewStickyHeader() {var _this;_classCallCheck(this, ScrollViewStickyHeader);for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {args[_key] = arguments[_key];}_this = _super.call.apply(_super, [this].concat(args));_this.
+    state = {
+      measured: false,
+      layoutY: 0,
+      layoutHeight: 0,
+      nextHeaderLayoutY: _this.props.nextHeaderLayoutY,
+      translateY: null };_this.
+
+
+    _translateY = null;_this.
+    _shouldRecreateTranslateY = true;_this.
+    _haveReceivedInitialZeroTranslateY = true;_this.
+
+
+
+
+
+
+    _debounceTimeout = _Platform.default.OS === 'android' ? 15 : 64;_this.
+
+    setNextHeaderY = function (y) {
+      _this._shouldRecreateTranslateY = true;
+      _this.setState({ nextHeaderLayoutY: y });
+    };_this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    _onLayout = function (event) {
+      var layoutY = event.nativeEvent.layout.y;
+      var layoutHeight = event.nativeEvent.layout.height;
+      var measured = true;
+
+      if (
+      layoutY !== _this.state.layoutY ||
+      layoutHeight !== _this.state.layoutHeight ||
+      measured !== _this.state.measured)
+      {
+        _this._shouldRecreateTranslateY = true;
+      }
+
+      _this.setState({
+        measured: measured,
+        layoutY: layoutY,
+        layoutHeight: layoutHeight });
+
+
+      _this.props.onLayout(event);
+      var child = React.Children.only(_this.props.children);
+      if (child.props.onLayout) {
+        child.props.onLayout(event);
+      }
+    };_this.
+
+    _setComponentRef = function (ref) {
+      _this._ref = ref;
+    };return _this;}_createClass(ScrollViewStickyHeader, [{ key: "componentWillUnmount", value: function componentWillUnmount() {if (this._translateY != null && this._animatedValueListenerId != null) {this._translateY.removeListener(this._animatedValueListenerId);}if (this._timer) {clearTimeout(this._timer);}} }, { key: "UNSAFE_componentWillReceiveProps", value: function UNSAFE_componentWillReceiveProps(nextProps) {if (nextProps.scrollViewHeight !== this.props.scrollViewHeight || nextProps.scrollAnimatedValue !== this.props.scrollAnimatedValue || nextProps.inverted !== this.props.inverted) {this._shouldRecreateTranslateY = true;}} }, { key: "updateTranslateListener", value: function updateTranslateListener(translateY, isFabric, offset) {var _this2 = this;if (this._translateY != null && this._animatedValueListenerId != null) {this._translateY.removeListener(this._animatedValueListenerId);}offset ? this._translateY = new _AnimatedAddition.default(translateY, offset) : this._translateY = translateY;this._shouldRecreateTranslateY = false;if (!isFabric) {return;}if (!this._animatedValueListener) {this._animatedValueListener = function (_ref) {var value = _ref.value;if (value === 0 && !_this2._haveReceivedInitialZeroTranslateY) {_this2._haveReceivedInitialZeroTranslateY = true;return;}if (_this2._timer) {clearTimeout(_this2._timer);}_this2._timer = setTimeout(function () {if (value !== _this2.state.translateY) {_this2.setState({ translateY: value });}}, _this2._debounceTimeout);};}if (this.state.translateY !== 0 && this.state.translateY != null) {this._haveReceivedInitialZeroTranslateY = false;}this._animatedValueListenerId = translateY.addListener(this._animatedValueListener);} }, { key: "render", value:
+
+    function render() {var _this$_ref$_internalI, _this$_ref$_internalI2;
+
+      var isFabric = !!(
+
+
+      this._ref && (_this$_ref$_internalI = this._ref['_internalInstanceHandle']) != null && (_this$_ref$_internalI2 = _this$_ref$_internalI.stateNode) != null && _this$_ref$_internalI2.canonical);
+
+
+
+
+      if (this._shouldRecreateTranslateY) {
+        var _this$props = this.props,inverted = _this$props.inverted,scrollViewHeight = _this$props.scrollViewHeight;
+        var _this$state = this.state,measured = _this$state.measured,layoutHeight = _this$state.layoutHeight,layoutY = _this$state.layoutY,nextHeaderLayoutY = _this$state.nextHeaderLayoutY;
+        var inputRange = [-1, 0];
+        var outputRange = [0, 0];
+
+        if (measured) {
+          if (inverted) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if (scrollViewHeight != null) {
+              var stickStartPoint = layoutY + layoutHeight - scrollViewHeight;
+              if (stickStartPoint > 0) {
+                inputRange.push(stickStartPoint);
+                outputRange.push(0);
+                inputRange.push(stickStartPoint + 1);
+                outputRange.push(1);
+
+
+                var collisionPoint =
+                (nextHeaderLayoutY || 0) - layoutHeight - scrollViewHeight;
+                if (collisionPoint > stickStartPoint) {
+                  inputRange.push(collisionPoint, collisionPoint + 1);
+                  outputRange.push(
+                  collisionPoint - stickStartPoint,
+                  collisionPoint - stickStartPoint);
+
+                }
+              }
+            }
+          } else {
+
+
+
+
+
+
+
+
+
+
+            inputRange.push(layoutY);
+            outputRange.push(0);
+
+
+            var _collisionPoint = (nextHeaderLayoutY || 0) - layoutHeight;
+            if (_collisionPoint >= layoutY) {
+              inputRange.push(_collisionPoint, _collisionPoint + 1);
+              outputRange.push(
+              _collisionPoint - layoutY,
+              _collisionPoint - layoutY);
+
+            } else {
+              inputRange.push(layoutY + 1);
+              outputRange.push(1);
+            }
+          }
+        }
+
+        this.updateTranslateListener(
+        this.props.scrollAnimatedValue.interpolate({
+          inputRange: inputRange,
+          outputRange: outputRange }),
+
+        isFabric,
+        this.props.hiddenOnScroll ?
+        new _AnimatedDiffClamp.default(
+        this.props.scrollAnimatedValue.
+        interpolate({
+          extrapolateLeft: 'clamp',
+          inputRange: [layoutY, layoutY + 1],
+          outputRange: [0, 1] }).
+
+        interpolate({
+          inputRange: [0, 1],
+          outputRange: [0, -1] }),
+
+        -this.state.layoutHeight,
+        0) :
+
+        null);
+
+      }
+
+      var child = React.Children.only(this.props.children);
+
+
+      var passthroughAnimatedPropExplicitValues =
+      isFabric && this.state.translateY != null ?
+      {
+        style: { transform: [{ translateY: this.state.translateY }] } } :
+
+      null;
+
+      return (
+        React.createElement(AnimatedView, {
+          collapsable: false,
+          nativeID: this.props.nativeID,
+          onLayout: this._onLayout,
+          ref: this._setComponentRef,
+          style: [
+          child.props.style,
+          styles.header,
+          { transform: [{ translateY: this._translateY }] }],
+
+          passthroughAnimatedPropExplicitValues:
+          passthroughAnimatedPropExplicitValues, __self: this, __source: { fileName: _jsxFileName, lineNumber: 299, columnNumber: 7 } },
+
+        React.cloneElement(child, {
+          style: styles.fill,
+          onLayout: undefined })));
+
+
+
+    } }]);return ScrollViewStickyHeader;}(React.Component);
+
+
+var styles = _StyleSheet.default.create({
+  header: {
+    zIndex: 10,
+    position: 'relative' },
+
+  fill: {
+    flex: 1 } });
+
+
+
+module.exports = ScrollViewStickyHeader;

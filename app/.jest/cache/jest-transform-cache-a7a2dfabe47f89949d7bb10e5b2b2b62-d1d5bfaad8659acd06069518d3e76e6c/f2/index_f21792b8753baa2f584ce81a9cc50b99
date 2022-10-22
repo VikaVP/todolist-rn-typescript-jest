@@ -1,0 +1,31 @@
+3f2e514b8825e3f01bc99bc8259d08fa
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var cache = {};var _default =
+{
+  setItem: function setItem(key, value) {
+    return new Promise(function (resolve, reject) {
+      return typeof key !== 'string' || typeof value !== 'string' ?
+      reject(new Error('key and value must be string')) :
+      resolve(cache[key] = value);
+    });
+  },
+  getItem: function getItem(key, value) {
+    return new Promise(function (resolve) {
+      return cache.hasOwnProperty(key) ?
+      resolve(cache[key]) :
+      resolve(null);
+    });
+  },
+  removeItem: function removeItem(key) {
+    return new Promise(function (resolve, reject) {
+      return cache.hasOwnProperty(key) ?
+      resolve(delete cache[key]) :
+      reject('No such key!');
+    });
+  },
+  clear: function clear(key) {
+    return new Promise(function (resolve, reject) {return resolve(cache = {});});
+  },
+
+  getAllKeys: function getAllKeys(key) {
+    return new Promise(function (resolve, reject) {return resolve(Object.keys(cache));});
+  } };exports.default = _default;

@@ -1,0 +1,45 @@
+bc123720f491def5689b0a5ea42a224c
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+var NativeComponentRegistry = _interopRequireWildcard(require("../../NativeComponent/NativeComponentRegistry"));function _getRequireWildcardCache(nodeInterop) {if (typeof WeakMap !== "function") return null;var cacheBabelInterop = new WeakMap();var cacheNodeInterop = new WeakMap();return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {return nodeInterop ? cacheNodeInterop : cacheBabelInterop;})(nodeInterop);}function _interopRequireWildcard(obj, nodeInterop) {if (!nodeInterop && obj && obj.__esModule) {return obj;}if (obj === null || typeof obj !== "object" && typeof obj !== "function") {return { default: obj };}var cache = _getRequireWildcardCache(nodeInterop);if (cache && cache.has(obj)) {return cache.get(obj);}var newObj = {};var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;for (var key in obj) {if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;if (desc && (desc.get || desc.set)) {Object.defineProperty(newObj, key, desc);} else {newObj[key] = obj[key];}}}newObj.default = obj;if (cache) {cache.set(obj, newObj);}return newObj;}
+
+var AndroidHorizontalScrollViewNativeComponent = NativeComponentRegistry.get(
+'AndroidHorizontalScrollView',
+function () {return {
+    uiViewClassName: 'AndroidHorizontalScrollView',
+    bubblingEventTypes: {},
+    directEventTypes: {},
+    validAttributes: {
+      decelerationRate: true,
+      disableIntervalMomentum: true,
+      endFillColor: { process: require('../../StyleSheet/processColor') },
+      fadingEdgeLength: true,
+      nestedScrollEnabled: true,
+      overScrollMode: true,
+      pagingEnabled: true,
+      persistentScrollbar: true,
+      scrollEnabled: true,
+      scrollPerfTag: true,
+      sendMomentumEvents: true,
+      showsHorizontalScrollIndicator: true,
+      snapToAlignment: true,
+      snapToEnd: true,
+      snapToInterval: true,
+      snapToStart: true,
+      snapToOffsets: true,
+      contentOffset: true } };});var _default =
+
+
+
+
+AndroidHorizontalScrollViewNativeComponent;exports.default = _default;

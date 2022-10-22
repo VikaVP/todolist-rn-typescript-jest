@@ -1,0 +1,189 @@
+03fc727f62dc27882a74ec735b397d5a
+"use strict";
+
+
+
+
+
+
+
+
+
+var _NativeEventEmitter = _interopRequireDefault(require("../../EventEmitter/NativeEventEmitter"));
+var _LayoutAnimation = _interopRequireDefault(require("../../LayoutAnimation/LayoutAnimation"));
+var _dismissKeyboard = _interopRequireDefault(require("../../Utilities/dismissKeyboard"));
+var _Platform = _interopRequireDefault(require("../../Utilities/Platform"));
+var _NativeKeyboardObserver = _interopRequireDefault(require("./NativeKeyboardObserver"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);Object.defineProperty(Constructor, "prototype", { writable: false });return Constructor;}var
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Keyboard = function () {function Keyboard() {_classCallCheck(this, Keyboard);this.
+    _emitter = new _NativeEventEmitter.default(
+
+
+    _Platform.default.OS !== 'ios' ? null : _NativeKeyboardObserver.default);}_createClass(Keyboard, [{ key: "addListener", value:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function addListener(
+    eventType,
+    listener,
+    context)
+    {
+      return this._emitter.addListener(eventType, listener);
+    } }, { key: "removeListener", value:
+
+
+
+
+    function removeListener(
+    eventType,
+    listener)
+    {
+
+      this._emitter.removeListener(eventType, listener);
+    } }, { key: "removeAllListeners", value:
+
+
+
+
+
+
+    function removeAllListeners(eventType) {
+      this._emitter.removeAllListeners(eventType);
+    } }, { key: "dismiss", value:
+
+
+
+
+    function dismiss() {
+      (0, _dismissKeyboard.default)();
+    } }, { key: "scheduleLayoutAnimation", value:
+
+
+
+
+
+    function scheduleLayoutAnimation(event) {
+      var duration = event.duration,easing = event.easing;
+      if (duration != null && duration !== 0) {
+        _LayoutAnimation.default.configureNext({
+          duration: duration,
+          update: {
+            duration: duration,
+            type: easing != null && _LayoutAnimation.default.Types[easing] || 'keyboard' } });
+
+
+      }
+    } }]);return Keyboard;}();
+
+
+module.exports = new Keyboard();

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1666464364390" clover="3.2.0">
+  <project timestamp="1666464364390" name="All files">
+    <metrics statements="101" coveredstatements="61" conditionals="45" coveredconditionals="23" methods="26" coveredmethods="3" elements="172" coveredelements="87" complexity="0" loc="101" ncloc="101" packages="6" files="11" classes="11"/>
+    <package name="components.ActionButton">
+      <metrics statements="10" coveredstatements="6" conditionals="6" coveredconditionals="2" methods="3" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/ActionButton/index.tsx">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/ActionButton/styles.ts">
+        <metrics statements="5" coveredstatements="3" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.AddButton">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/index.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/styles.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="components.MainCard">
+      <metrics statements="11" coveredstatements="8" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainCard/index.tsx">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainCard/styles.ts">
+        <metrics statements="6" coveredstatements="5" conditionals="8" coveredconditionals="6" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="components.MainInput">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainInput/index.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainInput/styles.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="global">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="theme.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/global/theme.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="screens.Home">
+      <metrics statements="63" coveredstatements="30" conditionals="27" coveredconditionals="11" methods="19" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/screens/Home/index.tsx">
+        <metrics statements="56" coveredstatements="23" conditionals="17" coveredconditionals="1" methods="19" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="66" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="81" count="1" type="cond" truecount="0" falsecount="5"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="85" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="88" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="145" count="0" type="stmt"/>
+        <line num="156" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/screens/Home/styles.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="10" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="1" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>

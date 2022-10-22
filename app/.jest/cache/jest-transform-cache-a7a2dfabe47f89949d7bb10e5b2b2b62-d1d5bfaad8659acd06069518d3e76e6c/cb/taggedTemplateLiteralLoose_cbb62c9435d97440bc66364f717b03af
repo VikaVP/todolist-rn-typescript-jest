@@ -1,0 +1,9 @@
+a1e55a65ef3885862525a3dc452705e4
+function _taggedTemplateLiteralLoose(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+  strings.raw = raw;
+  return strings;
+}
+module.exports = _taggedTemplateLiteralLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;

@@ -1,0 +1,40 @@
+088b4d6180e8a9b65031af6fa8dedfa4
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+require("react-native");
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Home = _interopRequireDefault(require("../../screens/Home"));
+
+var _reactTestRenderer = _interopRequireDefault(require("react-test-renderer"));
+
+var _this = this,
+    _jsxFileName = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/test/Home/index.test.tsx";
+
+function _getJestObj() {
+  var _require = require("@jest/globals"),
+      jest = _require.jest;
+
+  _getJestObj = function _getJestObj() {
+    return jest;
+  };
+
+  return jest;
+}
+
+it('renders correctly', function () {
+  beforeAll(function () {
+    _getJestObj().mock('@react-native-community/async-storage');
+  });
+
+  _reactTestRenderer.default.create(_react.default.createElement(_Home.default, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 21
+    }
+  }));
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7QUFJQzs7QUFDQTs7QUFDQTs7QUFHQTs7Ozs7Ozs7Ozs7Ozs7OztBQUVBQSxFQUFFLENBQUMsbUJBQUQsRUFBc0IsWUFBSztBQUM1QkMsV0FBUyxDQUFDLFlBQUs7QUFDYixrQkFBS0MsSUFBTCxDQUFVLHVDQUFWO0FBQ0QsR0FGUSxDQUFUOztBQUlDQyw2QkFBU0MsTUFBVCxDQUFnQiw2QkFBQyxhQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFBaEI7QUFHRCxDQVJDLENBQUYiLCJuYW1lcyI6WyJpdCIsImJlZm9yZUFsbCIsIm1vY2siLCJyZW5kZXJlciIsImNyZWF0ZSJdLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYm8tdmlrYS9Eb2N1bWVudHMvUmVhY3QtTmF0aXZlLVRvLWRvLUxpc3QtbWFpbi9hcHAvc3JjL3Rlc3QvSG9tZS9pbmRleC50ZXN0LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBmb3JtYXRcbiAqL1xuXG4gaW1wb3J0ICdyZWFjdC1uYXRpdmUnO1xuIGltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG4gaW1wb3J0IEhvbWUgZnJvbSAnLi4vLi4vc2NyZWVucy9Ib21lJztcbiBcbiAvLyBOb3RlOiB0ZXN0IHJlbmRlcmVyIG11c3QgYmUgcmVxdWlyZWQgYWZ0ZXIgcmVhY3QtbmF0aXZlLlxuIGltcG9ydCByZW5kZXJlciBmcm9tICdyZWFjdC10ZXN0LXJlbmRlcmVyJztcbiBcbiBpdCgncmVuZGVycyBjb3JyZWN0bHknLCAoKSA9PiB7XG4gIGJlZm9yZUFsbCgoKSA9PiB7IFxuICAgIGplc3QubW9jaygnQHJlYWN0LW5hdGl2ZS1jb21tdW5pdHkvYXN5bmMtc3RvcmFnZScpO1xuICB9KVxuICBcbiAgIHJlbmRlcmVyLmNyZWF0ZSg8SG9tZSAvPik7XG4gIC8vICBleHBlY3QoPEhvbWUgLz4pLnRvTWF0Y2hTbmFwc2hvdCgpXG4gIC8vICBleHBlY3QoPEhvbWUgLz4pLnRvSGF2ZUxlbmd0aCgxKVxuIH0pO1xuICJdfQ==

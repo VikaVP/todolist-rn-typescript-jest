@@ -1,0 +1,23 @@
+1af661fb02969fca7f73991b8c71ce90
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+var _EventEmitter = _interopRequireDefault(require("../vendor/emitter/EventEmitter"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+
+
+
+
+
+
+
+
+
+
+new _EventEmitter.default();exports.default = _default;

@@ -1,0 +1,39 @@
+f2fc6694be2b43c4beeb63c3b9b04985
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true });
+
+exports.shouldFallbackToLegacyNativeModule = shouldFallbackToLegacyNativeModule;
+
+
+
+function shouldFallbackToLegacyNativeModule() {
+  var _NativeModules$Native, _NativeModules$Native2;
+
+  var expoConstants = (_NativeModules$Native = require("react-native").NativeModules['NativeUnimoduleProxy']) === null || _NativeModules$Native === void 0 ? void 0 : (_NativeModules$Native2 = _NativeModules$Native.modulesConstants) === null || _NativeModules$Native2 === void 0 ? void 0 : _NativeModules$Native2.ExponentConstants;
+
+  if (expoConstants) {
+
+
+
+
+
+    var isLegacySdkVersion = expoConstants.appOwnership && !expoConstants.executionEnvironment;
+
+
+
+
+
+
+
+
+
+
+    if (isLegacySdkVersion || ['storeClient', 'standalone'].includes(expoConstants.executionEnvironment)) {
+      return true;
+    }
+  }
+
+  return false;
+}

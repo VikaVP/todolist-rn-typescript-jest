@@ -1,0 +1,133 @@
+fecd44172a96960bd62c88e3dce0c27b
+"use strict";
+
+
+
+
+
+
+
+
+
+
+var _ReactNativeViewViewConfig = _interopRequireDefault(require("../../Components/View/ReactNativeViewViewConfig"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);enumerableOnly && (symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;})), keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = null != arguments[i] ? arguments[i] : {};i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {_defineProperty(target, key, source[key]);}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+
+var RCTTextInputViewConfig = {
+  uiViewClassName: 'RCTSinglelineTextInputView',
+  bubblingEventTypes: {
+    topBlur: {
+      phasedRegistrationNames: {
+        bubbled: 'onBlur',
+        captured: 'onBlurCapture' } },
+
+
+    topChange: {
+      phasedRegistrationNames: {
+        bubbled: 'onChange',
+        captured: 'onChangeCapture' } },
+
+
+    topEndEditing: {
+      phasedRegistrationNames: {
+        bubbled: 'onEndEditing',
+        captured: 'onEndEditingCapture' } },
+
+
+    topFocus: {
+      phasedRegistrationNames: {
+        bubbled: 'onFocus',
+        captured: 'onFocusCapture' } },
+
+
+    topKeyPress: {
+      phasedRegistrationNames: {
+        bubbled: 'onKeyPress',
+        captured: 'onKeyPressCapture' } },
+
+
+    topSubmitEditing: {
+      phasedRegistrationNames: {
+        bubbled: 'onSubmitEditing',
+        captured: 'onSubmitEditingCapture' } },
+
+
+    topTouchCancel: {
+      phasedRegistrationNames: {
+        bubbled: 'onTouchCancel',
+        captured: 'onTouchCancelCapture' } },
+
+
+    topTouchEnd: {
+      phasedRegistrationNames: {
+        bubbled: 'onTouchEnd',
+        captured: 'onTouchEndCapture' } },
+
+
+
+    topTouchMove: {
+      phasedRegistrationNames: {
+        bubbled: 'onTouchMove',
+        captured: 'onTouchMoveCapture' } } },
+
+
+
+  directEventTypes: {},
+  validAttributes: _objectSpread(_objectSpread({},
+  _ReactNativeViewViewConfig.default.validAttributes), {}, {
+    fontSize: true,
+    fontWeight: true,
+    fontVariant: true,
+
+    textShadowOffset: { diff: require('../../Utilities/differ/sizesDiffer') },
+    allowFontScaling: true,
+    fontStyle: true,
+    textTransform: true,
+    textAlign: true,
+    fontFamily: true,
+    lineHeight: true,
+    isHighlighted: true,
+    writingDirection: true,
+    textDecorationLine: true,
+    textShadowRadius: true,
+    letterSpacing: true,
+    textDecorationStyle: true,
+    textDecorationColor: { process: require('../../StyleSheet/processColor') },
+    color: { process: require('../../StyleSheet/processColor') },
+    maxFontSizeMultiplier: true,
+    textShadowColor: { process: require('../../StyleSheet/processColor') },
+    editable: true,
+    inputAccessoryViewID: true,
+    caretHidden: true,
+    enablesReturnKeyAutomatically: true,
+    placeholderTextColor: { process: require('../../StyleSheet/processColor') },
+    onSelectionChange: true,
+    clearButtonMode: true,
+    onContentSizeChange: true,
+    keyboardType: true,
+    selection: true,
+    returnKeyType: true,
+    blurOnSubmit: true,
+    mostRecentEventCount: true,
+    onChange: true,
+    scrollEnabled: true,
+    selectionColor: { process: require('../../StyleSheet/processColor') },
+    contextMenuHidden: true,
+    secureTextEntry: true,
+    onTextInput: true,
+    placeholder: true,
+    autoCorrect: true,
+    onScroll: true,
+    multiline: true,
+    textContentType: true,
+    maxLength: true,
+    autoCapitalize: true,
+    keyboardAppearance: true,
+    passwordRules: true,
+    spellCheck: true,
+    selectTextOnFocus: true,
+    text: true,
+    clearTextOnFocus: true }) };
+
+
+
+module.exports = RCTTextInputViewConfig;

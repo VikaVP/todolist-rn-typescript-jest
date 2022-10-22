@@ -1,0 +1,250 @@
+190d16e321dfbbb063c339e9d9a77de9
+/* istanbul ignore next */
+function cov_1epzy8sj25() {
+  var path = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/ActionButton/index.tsx";
+  var hash = "4485f7b85031456f990576e2c6a0454198dc279e";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/ActionButton/index.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 29
+        },
+        end: {
+          line: 1,
+          column: 84
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 36
+        }
+      },
+      "3": {
+        start: {
+          line: 8,
+          column: 13
+        },
+        end: {
+          line: 8,
+          column: 53
+        }
+      },
+      "4": {
+        start: {
+          line: 10,
+          column: 16
+        },
+        end: {
+          line: 10,
+          column: 85
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 14
+        },
+        end: {
+          line: 12,
+          column: 33
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 16
+        },
+        end: {
+          line: 15,
+          column: 28
+        }
+      },
+      "7": {
+        start: {
+          line: 16,
+          column: 13
+        },
+        end: {
+          line: 16,
+          column: 22
+        }
+      },
+      "8": {
+        start: {
+          line: 17,
+          column: 21
+        },
+        end: {
+          line: 17,
+          column: 38
+        }
+      },
+      "9": {
+        start: {
+          line: 18,
+          column: 18
+        },
+        end: {
+          line: 18,
+          column: 32
+        }
+      },
+      "10": {
+        start: {
+          line: 19,
+          column: 2
+        },
+        end: {
+          line: 27,
+          column: 6
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "ActionButton",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 21
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 28
+          },
+          end: {
+            line: 28,
+            column: 1
+          }
+        },
+        line: 14
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      file: undefined,
+      mappings: ";;;;;;;AAAA;;AAEA;;AAEA;;AAQM,SAAUA,YAAV,OAKU;AAAA,MAJdC,OAIc,QAJdA,OAIc;AAAA,MAHdC,IAGc,QAHdA,IAGc;AAAA,MAFdC,YAEc,QAFdA,YAEc;AAAA,MADdC,SACc,QADdA,SACc;AACd,SACE,6BAAC,uBAAD;AACE,WAAO,EAAEH,OADX;AAEE,gBAAY,EAAEE,YAFhB;AAGE,aAAS,EAAEC;AAHb,KAKE,6BAAC,iBAAD;AAAM,QAAI,EAAEF,IAAZ;AAAkB,QAAI,EAAE,EAAxB;AAA4B,SAAK,EAAC;AAAlC,IALF,CADF;AASD",
+      names: ["ActionButton", "onPress", "icon", "isCancelable", "leftSpace"],
+      sourceRoot: undefined,
+      sources: ["/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/ActionButton/index.tsx"],
+      sourcesContent: ["import React from \"react\";\nimport { TouchableOpacityProps } from \"react-native\";\nimport Icon from \"react-native-vector-icons/Ionicons\";\n\nimport { ButtonContainer } from \"./styles\";\n\ninterface IActionButton extends TouchableOpacityProps {\n  icon: string;\n  isCancelable?: boolean;\n  leftSpace?: boolean;\n}\n\nexport function ActionButton({\n  onPress,\n  icon,\n  isCancelable,\n  leftSpace,\n}: IActionButton) {\n  return (\n    <ButtonContainer\n      onPress={onPress}\n      isCancelable={isCancelable}\n      leftSpace={leftSpace}\n    >\n      <Icon name={icon} size={20} color=\"#FFF\" />\n    </ButtonContainer>\n  );\n}\n"]
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "4485f7b85031456f990576e2c6a0454198dc279e"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1epzy8sj25 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1epzy8sj25();
+
+var _interopRequireDefault =
+/* istanbul ignore next */
+(cov_1epzy8sj25().s[0]++, require("@babel/runtime/helpers/interopRequireDefault"));
+
+/* istanbul ignore next */
+cov_1epzy8sj25().s[1]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1epzy8sj25().s[2]++;
+exports.ActionButton = ActionButton;
+
+var _react =
+/* istanbul ignore next */
+(cov_1epzy8sj25().s[3]++, _interopRequireDefault(require("react")));
+
+var _Ionicons =
+/* istanbul ignore next */
+(cov_1epzy8sj25().s[4]++, _interopRequireDefault(require("react-native-vector-icons/Ionicons")));
+
+var _styles =
+/* istanbul ignore next */
+(cov_1epzy8sj25().s[5]++, require("./styles"));
+
+function ActionButton(_ref) {
+  /* istanbul ignore next */
+  cov_1epzy8sj25().f[0]++;
+  var onPress =
+  /* istanbul ignore next */
+  (cov_1epzy8sj25().s[6]++, _ref.onPress),
+      icon =
+  /* istanbul ignore next */
+  (cov_1epzy8sj25().s[7]++, _ref.icon),
+      isCancelable =
+  /* istanbul ignore next */
+  (cov_1epzy8sj25().s[8]++, _ref.isCancelable),
+      leftSpace =
+  /* istanbul ignore next */
+  (cov_1epzy8sj25().s[9]++, _ref.leftSpace);
+
+  /* istanbul ignore next */
+  cov_1epzy8sj25().s[10]++;
+  return _react.default.createElement(_styles.ButtonContainer, {
+    onPress: onPress,
+    isCancelable: isCancelable,
+    leftSpace: leftSpace
+  }, _react.default.createElement(_Ionicons.default, {
+    name: icon,
+    size: 20,
+    color: "#FFF"
+  }));
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWlCZ0I7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWpCaEI7QUFBQTtBQUFBOztBQUVBO0FBQUE7QUFBQTs7QUFFQTtBQUFBO0FBQUE7O0FBUU0sU0FBVUEsWUFBVixPQUtVO0FBQUE7QUFBQTtBQUFBLE1BSmRDLE9BSWM7QUFBQTtBQUFBLGlDQUpkQSxPQUljO0FBQUEsTUFIZEMsSUFHYztBQUFBO0FBQUEsaUNBSGRBLElBR2M7QUFBQSxNQUZkQyxZQUVjO0FBQUE7QUFBQSxpQ0FGZEEsWUFFYztBQUFBLE1BRGRDLFNBQ2M7QUFBQTtBQUFBLGlDQURkQSxTQUNjOztBQUFBO0FBQUE7QUFDZCxTQUNFQyw2QkFBQ0MsdUJBQUQ7QUFDRUwsV0FBTyxFQUFFQSxPQURYO0FBRUVFLGdCQUFZLEVBQUVBLFlBRmhCO0FBR0VDLGFBQVMsRUFBRUE7QUFIYixLQUtFQyw2QkFBQ0UsaUJBQUQ7QUFBTUMsUUFBSSxFQUFFTixJQUFaO0FBQWtCTyxRQUFJLEVBQUUsRUFBeEI7QUFBNEJDLFNBQUssRUFBQztBQUFsQyxJQUxGLENBREY7QUFTRCIsIm5hbWVzIjpbIkFjdGlvbkJ1dHRvbiIsIm9uUHJlc3MiLCJpY29uIiwiaXNDYW5jZWxhYmxlIiwibGVmdFNwYWNlIiwiX3JlYWN0IiwiX3N0eWxlcyIsIl9Jb25pY29ucyIsIm5hbWUiLCJzaXplIiwiY29sb3IiXSwic291cmNlcyI6WyIvVXNlcnMvZGJvLXZpa2EvRG9jdW1lbnRzL1JlYWN0LU5hdGl2ZS1Uby1kby1MaXN0LW1haW4vYXBwL3NyYy9jb21wb25lbnRzL0FjdGlvbkJ1dHRvbi9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHsgVG91Y2hhYmxlT3BhY2l0eVByb3BzIH0gZnJvbSBcInJlYWN0LW5hdGl2ZVwiO1xuaW1wb3J0IEljb24gZnJvbSBcInJlYWN0LW5hdGl2ZS12ZWN0b3ItaWNvbnMvSW9uaWNvbnNcIjtcblxuaW1wb3J0IHsgQnV0dG9uQ29udGFpbmVyIH0gZnJvbSBcIi4vc3R5bGVzXCI7XG5cbmludGVyZmFjZSBJQWN0aW9uQnV0dG9uIGV4dGVuZHMgVG91Y2hhYmxlT3BhY2l0eVByb3BzIHtcbiAgaWNvbjogc3RyaW5nO1xuICBpc0NhbmNlbGFibGU/OiBib29sZWFuO1xuICBsZWZ0U3BhY2U/OiBib29sZWFuO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gQWN0aW9uQnV0dG9uKHtcbiAgb25QcmVzcyxcbiAgaWNvbixcbiAgaXNDYW5jZWxhYmxlLFxuICBsZWZ0U3BhY2UsXG59OiBJQWN0aW9uQnV0dG9uKSB7XG4gIHJldHVybiAoXG4gICAgPEJ1dHRvbkNvbnRhaW5lclxuICAgICAgb25QcmVzcz17b25QcmVzc31cbiAgICAgIGlzQ2FuY2VsYWJsZT17aXNDYW5jZWxhYmxlfVxuICAgICAgbGVmdFNwYWNlPXtsZWZ0U3BhY2V9XG4gICAgPlxuICAgICAgPEljb24gbmFtZT17aWNvbn0gc2l6ZT17MjB9IGNvbG9yPVwiI0ZGRlwiIC8+XG4gICAgPC9CdXR0b25Db250YWluZXI+XG4gICk7XG59XG4iXX0=
