@@ -90,7 +90,7 @@ function Home() {
         setMainList(storage);
       }
     } catch (e) {
-      console.log(e, 'error');
+      console.log(e, 'error tes');
     }
   };
 
