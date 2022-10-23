@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1666464364390" clover="3.2.0">
-  <project timestamp="1666464364390" name="All files">
-    <metrics statements="101" coveredstatements="61" conditionals="45" coveredconditionals="23" methods="26" coveredmethods="3" elements="172" coveredelements="87" complexity="0" loc="101" ncloc="101" packages="6" files="11" classes="11"/>
+<coverage generated="1666522912816" clover="3.2.0">
+  <project timestamp="1666522912816" name="All files">
+    <metrics statements="98" coveredstatements="60" conditionals="47" coveredconditionals="23" methods="26" coveredmethods="3" elements="171" coveredelements="86" complexity="0" loc="98" ncloc="98" packages="6" files="11" classes="11"/>
     <package name="components.ActionButton">
       <metrics statements="10" coveredstatements="6" conditionals="6" coveredconditionals="2" methods="3" coveredmethods="0"/>
       <file name="index.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/ActionButton/index.tsx">
@@ -83,9 +83,9 @@
       </file>
     </package>
     <package name="screens.Home">
-      <metrics statements="63" coveredstatements="30" conditionals="27" coveredconditionals="11" methods="19" coveredmethods="1"/>
+      <metrics statements="60" coveredstatements="29" conditionals="29" coveredconditionals="11" methods="19" coveredmethods="1"/>
       <file name="index.tsx" path="/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/screens/Home/index.tsx">
-        <metrics statements="56" coveredstatements="23" conditionals="17" coveredconditionals="1" methods="19" coveredmethods="1"/>
+        <metrics statements="53" coveredstatements="22" conditionals="19" coveredconditionals="1" methods="19" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -95,7 +95,6 @@
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="27" count="3" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
@@ -121,10 +120,8 @@
         <line num="72" count="0" type="stmt"/>
         <line num="77" count="0" type="stmt"/>
         <line num="78" count="0" type="stmt"/>
-        <line num="81" count="1" type="cond" truecount="0" falsecount="5"/>
+        <line num="81" count="1" type="cond" truecount="0" falsecount="9"/>
         <line num="83" count="0" type="stmt"/>
-        <line num="85" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="86" count="0" type="stmt"/>
         <line num="88" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="90" count="0" type="stmt"/>
         <line num="93" count="0" type="stmt"/>

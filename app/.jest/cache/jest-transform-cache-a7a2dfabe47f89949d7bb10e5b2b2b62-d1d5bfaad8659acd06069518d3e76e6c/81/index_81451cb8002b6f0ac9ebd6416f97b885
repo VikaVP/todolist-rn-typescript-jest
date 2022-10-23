@@ -1,0 +1,206 @@
+e0208ea42363feddfedcc045e2794b8a
+/* istanbul ignore next */
+function cov_6jet1229h() {
+  var path = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/index.tsx";
+  var hash = "fdcee2fd99de6307a6306027af87fb093ddc6dde";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/index.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 29
+        },
+        end: {
+          line: 1,
+          column: 84
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 30
+        }
+      },
+      "3": {
+        start: {
+          line: 8,
+          column: 13
+        },
+        end: {
+          line: 8,
+          column: 53
+        }
+      },
+      "4": {
+        start: {
+          line: 10,
+          column: 16
+        },
+        end: {
+          line: 10,
+          column: 85
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 14
+        },
+        end: {
+          line: 12,
+          column: 33
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 16
+        },
+        end: {
+          line: 15,
+          column: 28
+        }
+      },
+      "7": {
+        start: {
+          line: 16,
+          column: 2
+        },
+        end: {
+          line: 22,
+          column: 6
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "AddButton",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 18
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 25
+          },
+          end: {
+            line: 23,
+            column: 1
+          }
+        },
+        line: 14
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      file: undefined,
+      mappings: ";;;;;;;AAAA;;AAEA;;AAEA;;AAIM,SAAUA,SAAV,OAA2C;AAAA,MAArBC,OAAqB,QAArBA,OAAqB;AAC/C,SACE,6BAAC,uBAAD;AAAiB,WAAO,EAAEA;AAA1B,KACE,6BAAC,iBAAD;AAAM,QAAI,EAAC,aAAX;AAAyB,QAAI,EAAE,EAA/B;AAAmC,SAAK,EAAC;AAAzC,IADF,CADF;AAKD",
+      names: ["AddButton", "onPress"],
+      sourceRoot: undefined,
+      sources: ["/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/AddButton/index.tsx"],
+      sourcesContent: ["import React from \"react\";\nimport { TouchableOpacityProps } from \"react-native\";\nimport Icon from \"react-native-vector-icons/Ionicons\";\n\nimport { ButtonContainer } from \"./styles\";\n\ntype IAddButton = TouchableOpacityProps;\n\nexport function AddButton({ onPress }: IAddButton) {\n  return (\n    <ButtonContainer onPress={onPress}>\n      <Icon name=\"add-outline\" size={40} color=\"#FFF\" />\n    </ButtonContainer>\n  );\n}\n"]
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "fdcee2fd99de6307a6306027af87fb093ddc6dde"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_6jet1229h = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_6jet1229h();
+
+var _interopRequireDefault =
+/* istanbul ignore next */
+(cov_6jet1229h().s[0]++, require("@babel/runtime/helpers/interopRequireDefault"));
+
+/* istanbul ignore next */
+cov_6jet1229h().s[1]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_6jet1229h().s[2]++;
+exports.AddButton = AddButton;
+
+var _react =
+/* istanbul ignore next */
+(cov_6jet1229h().s[3]++, _interopRequireDefault(require("react")));
+
+var _Ionicons =
+/* istanbul ignore next */
+(cov_6jet1229h().s[4]++, _interopRequireDefault(require("react-native-vector-icons/Ionicons")));
+
+var _styles =
+/* istanbul ignore next */
+(cov_6jet1229h().s[5]++, require("./styles"));
+
+function AddButton(_ref) {
+  /* istanbul ignore next */
+  cov_6jet1229h().f[0]++;
+  var onPress =
+  /* istanbul ignore next */
+  (cov_6jet1229h().s[6]++, _ref.onPress);
+
+  /* istanbul ignore next */
+  cov_6jet1229h().s[7]++;
+  return _react.default.createElement(_styles.ButtonContainer, {
+    onPress: onPress
+  }, _react.default.createElement(_Ionicons.default, {
+    name: "add-outline",
+    size: 40,
+    color: "#FFF"
+  }));
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQVVJOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFWSjtBQUFBO0FBQUE7O0FBRUE7QUFBQTtBQUFBOztBQUVBO0FBQUE7QUFBQTs7QUFJTSxTQUFVQSxTQUFWLE9BQTJDO0FBQUE7QUFBQTtBQUFBLE1BQXJCQyxPQUFxQjtBQUFBO0FBQUEsZ0NBQXJCQSxPQUFxQjs7QUFBQTtBQUFBO0FBQy9DLFNBQ0VDLDZCQUFDQyx1QkFBRDtBQUFpQkYsV0FBTyxFQUFFQTtBQUExQixLQUNFQyw2QkFBQ0UsaUJBQUQ7QUFBTUMsUUFBSSxFQUFDLGFBQVg7QUFBeUJDLFFBQUksRUFBRSxFQUEvQjtBQUFtQ0MsU0FBSyxFQUFDO0FBQXpDLElBREYsQ0FERjtBQUtEIiwibmFtZXMiOlsiQWRkQnV0dG9uIiwib25QcmVzcyIsIl9yZWFjdCIsIl9zdHlsZXMiLCJfSW9uaWNvbnMiLCJuYW1lIiwic2l6ZSIsImNvbG9yIl0sInNvdXJjZXMiOlsiL1VzZXJzL2Riby12aWthL0RvY3VtZW50cy9SZWFjdC1OYXRpdmUtVG8tZG8tTGlzdC1tYWluL2FwcC9zcmMvY29tcG9uZW50cy9BZGRCdXR0b24vaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7IFRvdWNoYWJsZU9wYWNpdHlQcm9wcyB9IGZyb20gXCJyZWFjdC1uYXRpdmVcIjtcbmltcG9ydCBJY29uIGZyb20gXCJyZWFjdC1uYXRpdmUtdmVjdG9yLWljb25zL0lvbmljb25zXCI7XG5cbmltcG9ydCB7IEJ1dHRvbkNvbnRhaW5lciB9IGZyb20gXCIuL3N0eWxlc1wiO1xuXG50eXBlIElBZGRCdXR0b24gPSBUb3VjaGFibGVPcGFjaXR5UHJvcHM7XG5cbmV4cG9ydCBmdW5jdGlvbiBBZGRCdXR0b24oeyBvblByZXNzIH06IElBZGRCdXR0b24pIHtcbiAgcmV0dXJuIChcbiAgICA8QnV0dG9uQ29udGFpbmVyIG9uUHJlc3M9e29uUHJlc3N9PlxuICAgICAgPEljb24gbmFtZT1cImFkZC1vdXRsaW5lXCIgc2l6ZT17NDB9IGNvbG9yPVwiI0ZGRlwiIC8+XG4gICAgPC9CdXR0b25Db250YWluZXI+XG4gICk7XG59XG4iXX0=

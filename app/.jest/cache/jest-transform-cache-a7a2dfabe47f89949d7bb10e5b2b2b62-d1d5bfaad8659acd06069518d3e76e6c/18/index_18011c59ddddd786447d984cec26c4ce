@@ -1,0 +1,253 @@
+aabfa965ace223dbd0fbc4b3a5c33edc
+/* istanbul ignore next */
+function cov_aoujb0k7p() {
+  var path = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainCard/index.tsx";
+  var hash = "c565a503f9ceeb278d9f9b8ca342647b8cd43f56";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainCard/index.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 29
+        },
+        end: {
+          line: 1,
+          column: 84
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 28
+        }
+      },
+      "3": {
+        start: {
+          line: 8,
+          column: 13
+        },
+        end: {
+          line: 8,
+          column: 53
+        }
+      },
+      "4": {
+        start: {
+          line: 10,
+          column: 20
+        },
+        end: {
+          line: 10,
+          column: 46
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 14
+        },
+        end: {
+          line: 12,
+          column: 33
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 18
+        },
+        end: {
+          line: 15,
+          column: 32
+        }
+      },
+      "7": {
+        start: {
+          line: 16,
+          column: 13
+        },
+        end: {
+          line: 16,
+          column: 22
+        }
+      },
+      "8": {
+        start: {
+          line: 17,
+          column: 19
+        },
+        end: {
+          line: 17,
+          column: 34
+        }
+      },
+      "9": {
+        start: {
+          line: 18,
+          column: 17
+        },
+        end: {
+          line: 18,
+          column: 30
+        }
+      },
+      "10": {
+        start: {
+          line: 19,
+          column: 2
+        },
+        end: {
+          line: 30,
+          column: 7
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "MainCard",
+        decl: {
+          start: {
+            line: 14,
+            column: 9
+          },
+          end: {
+            line: 14,
+            column: 17
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 24
+          },
+          end: {
+            line: 31,
+            column: 1
+          }
+        },
+        line: 14
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      version: 3,
+      file: undefined,
+      mappings: ";;;;;;;AAAA;;AACA;;AAEA;;AASM,SAAUA,QAAV,OAAuE;AAAA,MAAlDC,SAAkD,QAAlDA,SAAkD;AAAA,MAAvCC,IAAuC,QAAvCA,IAAuC;AAAA,MAAjCC,UAAiC,QAAjCA,UAAiC;AAAA,MAArBC,QAAqB,QAArBA,QAAqB;AAC3E,SACE,6BAAC,qBAAD,QACE,6BAAC,gBAAD;AAAU,iBAAa,EAAE,CAAzB;AAA4B,aAAS,EAAEH;AAAvC,KACGC,IADH,CADF,EAKE,6BAAC,mBAAD,QACE,6BAAC,0BAAD;AAAc,QAAI,EAAC,mBAAnB;AAAuC,WAAO,EAAEC;AAAhD,IADF,EAGE,6BAAC,0BAAD;AACE,QAAI,EAAC,eADP;AAEE,WAAO,EAAEC,QAFX;AAGE,gBAAY,MAHd;AAIE,aAAS;AAJX,IAHF,CALF,CADF;AAkBD",
+      names: ["MainCard", "completed", "text", "onComplete", "onDelete"],
+      sourceRoot: undefined,
+      sources: ["/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainCard/index.tsx"],
+      sourcesContent: ["import React from \"react\";\nimport { ActionButton } from \"../ActionButton\";\n\nimport { CardContainer, CardText, ButtonsView } from \"./styles\";\n\ninterface ICardText {\n  completed: boolean;\n  text: string;\n  onComplete: () => void;\n  onDelete: () => void;\n}\n\nexport function MainCard({ completed, text, onComplete, onDelete }: ICardText) {\n  return (\n    <CardContainer>\n      <CardText numberOfLines={1} completed={completed}>\n        {text}\n      </CardText>\n\n      <ButtonsView>\n        <ActionButton icon=\"checkmark-outline\" onPress={onComplete} />\n\n        <ActionButton\n          icon=\"trash-outline\"\n          onPress={onDelete}\n          isCancelable\n          leftSpace\n        />\n      </ButtonsView>\n    </CardContainer>\n  );\n}\n"]
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "c565a503f9ceeb278d9f9b8ca342647b8cd43f56"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_aoujb0k7p = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_aoujb0k7p();
+
+var _interopRequireDefault =
+/* istanbul ignore next */
+(cov_aoujb0k7p().s[0]++, require("@babel/runtime/helpers/interopRequireDefault"));
+
+/* istanbul ignore next */
+cov_aoujb0k7p().s[1]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_aoujb0k7p().s[2]++;
+exports.MainCard = MainCard;
+
+var _react =
+/* istanbul ignore next */
+(cov_aoujb0k7p().s[3]++, _interopRequireDefault(require("react")));
+
+var _ActionButton =
+/* istanbul ignore next */
+(cov_aoujb0k7p().s[4]++, require("../ActionButton"));
+
+var _styles =
+/* istanbul ignore next */
+(cov_aoujb0k7p().s[5]++, require("./styles"));
+
+function MainCard(_ref) {
+  /* istanbul ignore next */
+  cov_aoujb0k7p().f[0]++;
+  var completed =
+  /* istanbul ignore next */
+  (cov_aoujb0k7p().s[6]++, _ref.completed),
+      text =
+  /* istanbul ignore next */
+  (cov_aoujb0k7p().s[7]++, _ref.text),
+      onComplete =
+  /* istanbul ignore next */
+  (cov_aoujb0k7p().s[8]++, _ref.onComplete),
+      onDelete =
+  /* istanbul ignore next */
+  (cov_aoujb0k7p().s[9]++, _ref.onDelete);
+
+  /* istanbul ignore next */
+  cov_aoujb0k7p().s[10]++;
+  return _react.default.createElement(_styles.CardContainer, null, _react.default.createElement(_styles.CardText, {
+    numberOfLines: 1,
+    completed: completed
+  }, text), _react.default.createElement(_styles.ButtonsView, null, _react.default.createElement(_ActionButton.ActionButton, {
+    icon: "checkmark-outline",
+    onPress: onComplete
+  }), _react.default.createElement(_ActionButton.ActionButton, {
+    icon: "trash-outline",
+    onPress: onDelete,
+    isCancelable: true,
+    leftSpace: true
+  })));
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQVk2RTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBWjdFO0FBQUE7QUFBQTs7QUFDQTtBQUFBO0FBQUE7O0FBRUE7QUFBQTtBQUFBOztBQVNNLFNBQVVBLFFBQVYsT0FBdUU7QUFBQTtBQUFBO0FBQUEsTUFBbERDLFNBQWtEO0FBQUE7QUFBQSxnQ0FBbERBLFNBQWtEO0FBQUEsTUFBdkNDLElBQXVDO0FBQUE7QUFBQSxnQ0FBdkNBLElBQXVDO0FBQUEsTUFBakNDLFVBQWlDO0FBQUE7QUFBQSxnQ0FBakNBLFVBQWlDO0FBQUEsTUFBckJDLFFBQXFCO0FBQUE7QUFBQSxnQ0FBckJBLFFBQXFCOztBQUFBO0FBQUE7QUFDM0UsU0FDRUMsNkJBQUNDLHFCQUFELFFBQ0VELDZCQUFDQyxnQkFBRDtBQUFVQyxpQkFBYSxFQUFFLENBQXpCO0FBQTRCTixhQUFTLEVBQUVBO0FBQXZDLEtBQ0dDLElBREgsQ0FERixFQUtFRyw2QkFBQ0MsbUJBQUQsUUFDRUQsNkJBQUNHLDBCQUFEO0FBQWNDLFFBQUksRUFBQyxtQkFBbkI7QUFBdUNDLFdBQU8sRUFBRVA7QUFBaEQsSUFERixFQUdFRSw2QkFBQ0csMEJBQUQ7QUFDRUMsUUFBSSxFQUFDLGVBRFA7QUFFRUMsV0FBTyxFQUFFTixRQUZYO0FBR0VPLGdCQUFZLE1BSGQ7QUFJRUMsYUFBUztBQUpYLElBSEYsQ0FMRixDQURGO0FBa0JEIiwibmFtZXMiOlsiTWFpbkNhcmQiLCJjb21wbGV0ZWQiLCJ0ZXh0Iiwib25Db21wbGV0ZSIsIm9uRGVsZXRlIiwiX3JlYWN0IiwiX3N0eWxlcyIsIm51bWJlck9mTGluZXMiLCJfQWN0aW9uQnV0dG9uIiwiaWNvbiIsIm9uUHJlc3MiLCJpc0NhbmNlbGFibGUiLCJsZWZ0U3BhY2UiXSwic291cmNlcyI6WyIvVXNlcnMvZGJvLXZpa2EvRG9jdW1lbnRzL1JlYWN0LU5hdGl2ZS1Uby1kby1MaXN0LW1haW4vYXBwL3NyYy9jb21wb25lbnRzL01haW5DYXJkL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBBY3Rpb25CdXR0b24gfSBmcm9tIFwiLi4vQWN0aW9uQnV0dG9uXCI7XG5cbmltcG9ydCB7IENhcmRDb250YWluZXIsIENhcmRUZXh0LCBCdXR0b25zVmlldyB9IGZyb20gXCIuL3N0eWxlc1wiO1xuXG5pbnRlcmZhY2UgSUNhcmRUZXh0IHtcbiAgY29tcGxldGVkOiBib29sZWFuO1xuICB0ZXh0OiBzdHJpbmc7XG4gIG9uQ29tcGxldGU6ICgpID0+IHZvaWQ7XG4gIG9uRGVsZXRlOiAoKSA9PiB2b2lkO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gTWFpbkNhcmQoeyBjb21wbGV0ZWQsIHRleHQsIG9uQ29tcGxldGUsIG9uRGVsZXRlIH06IElDYXJkVGV4dCkge1xuICByZXR1cm4gKFxuICAgIDxDYXJkQ29udGFpbmVyPlxuICAgICAgPENhcmRUZXh0IG51bWJlck9mTGluZXM9ezF9IGNvbXBsZXRlZD17Y29tcGxldGVkfT5cbiAgICAgICAge3RleHR9XG4gICAgICA8L0NhcmRUZXh0PlxuXG4gICAgICA8QnV0dG9uc1ZpZXc+XG4gICAgICAgIDxBY3Rpb25CdXR0b24gaWNvbj1cImNoZWNrbWFyay1vdXRsaW5lXCIgb25QcmVzcz17b25Db21wbGV0ZX0gLz5cblxuICAgICAgICA8QWN0aW9uQnV0dG9uXG4gICAgICAgICAgaWNvbj1cInRyYXNoLW91dGxpbmVcIlxuICAgICAgICAgIG9uUHJlc3M9e29uRGVsZXRlfVxuICAgICAgICAgIGlzQ2FuY2VsYWJsZVxuICAgICAgICAgIGxlZnRTcGFjZVxuICAgICAgICAvPlxuICAgICAgPC9CdXR0b25zVmlldz5cbiAgICA8L0NhcmRDb250YWluZXI+XG4gICk7XG59XG4iXX0=

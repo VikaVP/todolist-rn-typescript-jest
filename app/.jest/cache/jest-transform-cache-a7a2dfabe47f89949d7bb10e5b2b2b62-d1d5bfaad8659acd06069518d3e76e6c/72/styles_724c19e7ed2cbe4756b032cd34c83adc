@@ -1,0 +1,211 @@
+63b856a7f843248bb66ab059701da02c
+/* istanbul ignore next */
+function cov_abrjohcj() {
+  var path = "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainInput/styles.ts";
+  var hash = "32e70bd5f58870e3413bca2fb6f0caf14c352598";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainInput/styles.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 29
+        },
+        end: {
+          line: 1,
+          column: 84
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 0
+        },
+        end: {
+          line: 6,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 8,
+          column: 35
+        },
+        end: {
+          line: 8,
+          column: 119
+        }
+      },
+      "4": {
+        start: {
+          line: 10,
+          column: 14
+        },
+        end: {
+          line: 10,
+          column: 73
+        }
+      },
+      "5": {
+        start: {
+          line: 12,
+          column: 13
+        },
+        end: {
+          line: 12,
+          column: 66
+        }
+      },
+      "6": {
+        start: {
+          line: 16,
+          column: 21
+        },
+        end: {
+          line: 16,
+          column: 265
+        }
+      },
+      "7": {
+        start: {
+          line: 18,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 40
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 16,
+            column: 47
+          },
+          end: {
+            line: 16,
+            column: 236
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 16,
+            column: 47
+          },
+          end: {
+            line: 16,
+            column: 62
+          }
+        }, {
+          start: {
+            line: 16,
+            column: 67
+          },
+          end: {
+            line: 16,
+            column: 235
+          }
+        }],
+        line: 16
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {},
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      file: undefined,
+      mappings: ";;;;;;;;;AAAA;;AAEA;;;;AAEO,IAAMA,cAAc,GAAGC,gBAAOC,SAAV,gMAKhBC,eAAMC,MAAN,CAAaC,IALG,CAApB",
+      names: ["InputContainer", "styled", "TextInput", "theme", "colors", "dark"],
+      sourceRoot: undefined,
+      sources: ["/Users/dbo-vika/Documents/React-Native-To-do-List-main/app/src/components/MainInput/styles.ts"],
+      sourcesContent: ["import styled from \"styled-components/native\";\n\nimport theme from \"../../global/theme\";\n\nexport const InputContainer = styled.TextInput`\n  flex: 1;\n  border-radius: 8px;\n  padding-left: 10px;\n  background-color: #fff;\n  color: ${theme.colors.dark};\n`;\n"]
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "32e70bd5f58870e3413bca2fb6f0caf14c352598"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_abrjohcj = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_abrjohcj();
+
+var _interopRequireDefault =
+/* istanbul ignore next */
+(cov_abrjohcj().s[0]++, require("@babel/runtime/helpers/interopRequireDefault"));
+
+/* istanbul ignore next */
+cov_abrjohcj().s[1]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_abrjohcj().s[2]++;
+exports.InputContainer = void 0;
+
+var _taggedTemplateLiteralLoose2 =
+/* istanbul ignore next */
+(cov_abrjohcj().s[3]++, _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteralLoose")));
+
+var _native =
+/* istanbul ignore next */
+(cov_abrjohcj().s[4]++, _interopRequireDefault(require("styled-components/native")));
+
+var _theme =
+/* istanbul ignore next */
+(cov_abrjohcj().s[5]++, _interopRequireDefault(require("../../global/theme")));
+
+var _templateObject;
+
+var InputContainer =
+/* istanbul ignore next */
+(cov_abrjohcj().s[6]++, _native.default.TextInput(
+/* istanbul ignore next */
+(cov_abrjohcj().b[0][0]++, _templateObject) ||
+/* istanbul ignore next */
+(cov_abrjohcj().b[0][1]++, _templateObject = (0, _taggedTemplateLiteralLoose2.default)(["\n  flex: 1;\n  border-radius: 8px;\n  padding-left: 10px;\n  background-color: #fff;\n  color: ", ";\n"])), _theme.default.colors.dark));
+
+/* istanbul ignore next */
+cov_abrjohcj().s[7]++;
+exports.InputContainer = InputContainer;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUlhQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUpiO0FBQUE7QUFBQTs7QUFFQTtBQUFBO0FBQUE7Ozs7QUFFTyxJQUFNQSxjQUFjO0FBQUE7QUFBQSx3QkFBR0MsZ0JBQU9DLFNBQVBEO0FBQUg7QUFBQTtBQUFBO0FBQUEsb01BQUdBLEVBS25CRSxlQUFNQyxNQUFORCxDQUFhRSxJQUxNSixDQUFILENBQXBCIiwibmFtZXMiOlsiSW5wdXRDb250YWluZXIiLCJzdHlsZWQiLCJUZXh0SW5wdXQiLCJ0aGVtZSIsImNvbG9ycyIsImRhcmsiXSwic291cmNlcyI6WyIvVXNlcnMvZGJvLXZpa2EvRG9jdW1lbnRzL1JlYWN0LU5hdGl2ZS1Uby1kby1MaXN0LW1haW4vYXBwL3NyYy9jb21wb25lbnRzL01haW5JbnB1dC9zdHlsZXMudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tIFwic3R5bGVkLWNvbXBvbmVudHMvbmF0aXZlXCI7XG5cbmltcG9ydCB0aGVtZSBmcm9tIFwiLi4vLi4vZ2xvYmFsL3RoZW1lXCI7XG5cbmV4cG9ydCBjb25zdCBJbnB1dENvbnRhaW5lciA9IHN0eWxlZC5UZXh0SW5wdXRgXG4gIGZsZXg6IDE7XG4gIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgcGFkZGluZy1sZWZ0OiAxMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICBjb2xvcjogJHt0aGVtZS5jb2xvcnMuZGFya307XG5gO1xuIl19
