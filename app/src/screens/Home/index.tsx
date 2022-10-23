@@ -80,12 +80,12 @@ function Home() {
 
   const getStorage = async () => {
     try {
-      let jsonValue = await AsyncStorage.getItem("list");
+      const jsonValue = await AsyncStorage.getItem("list");
 
       if (!jsonValue) {
         AsyncStorage.setItem("list", JSON.stringify(mainList));
       } else {
-        let storage = jsonValue && JSON.parse(jsonValue);
+        const storage = jsonValue && JSON.parse(jsonValue);
 
         setMainList(storage);
       }

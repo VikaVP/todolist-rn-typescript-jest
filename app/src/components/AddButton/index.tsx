@@ -4,7 +4,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 
 import { ButtonContainer } from "./styles";
 
-interface IAddButton extends TouchableOpacityProps {}
+type IAddButton = TouchableOpacityProps;
 
 export function AddButton({ onPress }: IAddButton) {
   return (
